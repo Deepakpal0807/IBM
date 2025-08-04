@@ -1,0 +1,92 @@
+.info-section {
+    padding: 64px 32px;
+    text-align: center;
+    background-color: #2e2d2d;
+}
+.info-title-content {
+    margin-bottom: 64px;
+}
+.info-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff0000;
+}
+.info-title > span {
+    position: relative;
+}
+.info-title span::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: #950000;
+    border-radius: 8px;
+    left: 15%;
+    bottom: -15px;
+}
+.info-description {
+    margin: 32px auto 0;
+    max-width: 700px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+/* Cards */
+.info-cards-content {
+    margin: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.info-card {
+    padding: 40px 24px;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+.info-card-title {
+    margin-bottom: 24px;
+    color: #ff0000;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.info-card-description {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.7rem;
+}
+.info-card-icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-fa-icon {
+    color: white;
+    font-size: 28px;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .info-cards-content {
+        grid-template-columns: 1fr;
+    }
+}

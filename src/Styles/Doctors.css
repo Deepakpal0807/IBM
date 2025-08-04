@@ -1,0 +1,104 @@
+.doctor-section {
+    padding: 64px 32px;
+    text-align: center;
+    background-color: #2e2d2d;
+}
+.dt-title-content {
+    margin-bottom: 64px;
+}
+.dt-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff0000;
+}
+.dt-title > span {
+    position: relative;
+}
+.dt-title span::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    left: 15%;
+    bottom: -15px;
+}
+.dt-description {
+    margin: 32px auto 0;
+    max-width: 700px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+/* Doctor Cards */
+.dt-cards-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 64px;
+}
+.dt-card {
+    width: 340px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dt-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+.dt-card-img {
+    width: 100%;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    background-color: #7b647f;
+}
+.dt-card-content {
+    padding: 24px;
+}
+.dt-card-name {
+    margin: 0 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #000000;
+}
+.dt-card-title {
+    margin: 8px 0 12px;
+    color: #555555;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+.dt-card-stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 8px;
+}
+.dt-card-reviews {
+    color: #777777;
+    font-size: 16px;
+}
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .dt-title {
+        font-size: 36px;
+    }
+    .dt-description {
+        font-size: 16px;
+    }
+}

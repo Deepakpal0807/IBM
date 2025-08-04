@@ -1,0 +1,107 @@
+.review-section {
+    padding: 64px 32px;
+    background-color: #2e2d2d;
+    text-align: center;
+}
+/* Text */
+.rw-text-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.rw-text-title {
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+.rw-text-desc {
+    margin-bottom: 48px;
+    color: #ff0000;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.rw-text-format {
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+}
+.rw-text-quote1 {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    opacity: 0.5;
+}
+.rw-text-quote2 {
+    position: absolute;
+    right: 0;
+    bottom: -32px;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    opacity: 0.5;
+}
+.rw-review {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 2.0rem;
+}
+.rw-authors {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rw-reviewer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.rw-reviewer-place {
+    margin-top: 8px;
+    color: #777777;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+/* Buttons */
+.rw-controls {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.rw-next-btn {
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.rw-next-btn:hover {
+    color: #ff0000;
+}
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .review-section {
+        padding: 48px 24px;
+    }
+    .rw-text-desc {
+        font-size: 32px;
+    }
+    .rw-review {
+        font-size: 18px;
+    }
+    .rw-reviewer-name {
+        font-size: 20px;
+    }
+}

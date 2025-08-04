@@ -1,0 +1,71 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.not-found-box {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #262323;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-title {
+  font-size: 2.5rem;
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+.not-found-message {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.not-found-message span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.not-found-link {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.not-found-link:hover {
+  background-color: #0056b3;
+}
+
+/* NotFound.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  font-family: Arial, sans-serif;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.not-found-box {
+  background-color: #2e2e2e; /* Light grey box */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
